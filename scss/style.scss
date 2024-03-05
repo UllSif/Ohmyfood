@@ -10,3 +10,13 @@ $lightgreen: #99e2d0;
 
 $background: #f3f3f3;
 
+@media (max-width: 767.98px) {
+  header {
+    display: flex;
+    justify-content: center;
+    #logo {
+      width: 197px;
+    }
+  }
+}
+

@@ -1,0 +1,11 @@
+@media (max-width: 767.98px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    header #logo {
+        width: 197px;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
