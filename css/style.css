@@ -1,6 +1,7 @@
 * {
     font-family: "Roboto", sans-serif;
     text-decoration: none;
+    list-style-type: none;
 }
 
 @media (max-width: 767.98px) {
@@ -23,38 +24,121 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #f3f3f3;
+        background-color: #EAEAEA;
         box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
     }
     main #localisation .localisation-icon {
         margin-right: 16px;
         height: 20px;
     }
-    main #localisation .localisation-titre {
+    main #localisation .localisation-title {
         font-size: 22px;
     }
     main #about {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 25px 30px 0 30px;
         text-align: center;
+        background-color: #F6F6F6;
+        height: 270px;
     }
     main #about #about-title {
         font-size: 24px;
-        margin-bottom: 0;
+        margin: 20px 30px 0 30px;
+        margin-top: 25px;
     }
     main #about #about-texte {
         font-size: 18px;
+        margin: 20px 30px 0 30px;
     }
     main #about #about-button {
         border: 0;
+        width: 218px;
+        height: 40px;
         padding: 12px 24px;
+        margin: 20px 30px 0 30px;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 19px;
         border-radius: 100px;
         color: white;
         background-image: linear-gradient(0deg, #9359dc 0%, rgba(255, 121, 218, 0.9) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main #fonctionnement {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    main #fonctionnement #fonctionnement-liste {
+        display: flex;
+        flex-direction: column;
+        counter-reset: item;
+    }
+    main #fonctionnement #fonctionnement-liste .fonctionnement-item {
+        border-radius: 100px;
+        background-color: #F6F6F6;
+        width: 335px;
+        height: 72px;
+        text-align: center;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main #fonctionnement #fonctionnement-liste .fonctionnement-item:before {
+        content: counter(item) "";
+        counter-increment: item;
+    }
+    main #restaurants {
+        background-color: #F6F6F6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main #restaurants .restaurants-item {
+        width: 370px;
+        height: 340px;
+        background-color: white;
+        margin-bottom: 20px;
+        border-radius: 15px 15px;
+        color: black;
+        font-size: 18px;
+    }
+    main #restaurants .restaurants-item img {
+        width: 370px;
+        height: 231px;
+        border-radius: 15px 15px 0 0;
+    }
+    main #restaurants .restaurants-item .restaurants-description {
+        display: flex;
+        justify-content: space-around;
+    }
+    main #restaurants .restaurants-item .restaurants-icon {
+        display: flex;
+        align-items: center;
+    }
+    main #restaurants .restaurants-item .restaurants-icon-full {
+        background: -webkit-linear-gradient(0deg, #9359dc 0%, rgba(255, 121, 218, 0.9) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    main #footer {
+        background-color: #353535;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    main #footer #footer-logo {
+        color: white;
+        font-family: "Shrikhand", "cursive";
+        font-size: 24px;
+        margin-left: 20px;
+    }
+    main #footer .footer-link {
+        color: white;
+        font-size: 18px;
     }
 }
 

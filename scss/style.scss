@@ -8,14 +8,30 @@ $darkgreen: #008766;
 
 $lightgreen: #99e2d0;
 
-$background: #f3f3f3;
+$background-loc: #EAEAEA;
+
+$background: #F6F6F6;
 
 $font-header: 'Shrikhand', 'cursive';
+
+$margin-intro: 20px 30px 0 30px;
+
+$gradiant: linear-gradient(0deg, rgba(147, 89, 220, 1) 0%, rgba(255, 121, 218, 0.9) 100%);
 
 * {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
+  list-style-type: none;
 }
+
+//#fonctionnement-liste {
+//  counter-reset: item;
+//
+//  .fontionnement-item:before {
+//    content: counter(item) "";
+//    counter-increment: item;
+//  }
+//}
 
 @media (max-width: 767.98px) {
   body {
@@ -27,6 +43,7 @@ $font-header: 'Shrikhand', 'cursive';
     justify-content: center;
     align-items: center;
     height: 63px;
+
     #logo {
       width: 197px;
       height: 36px;
@@ -38,14 +55,15 @@ $font-header: 'Shrikhand', 'cursive';
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: $background;
+      background-color: $background-loc;
       box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
 
       .localisation-icon {
         margin-right: 16px;
         height: 20px;
       }
-      .localisation-titre {
+
+      .localisation-title {
         font-size: 22px;
       }
     }
@@ -54,24 +72,116 @@ $font-header: 'Shrikhand', 'cursive';
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 25px 30px 0 30px;
       text-align: center;
+      background-color: $background;
+      height: 270px;
 
       #about-title {
         font-size: 24px;
-        margin-bottom: 0;
+        margin: $margin-intro;
+        margin-top: 25px;
       }
+
       #about-texte {
         font-size: 18px;
+        margin: $margin-intro;
       }
+
       #about-button {
         border: 0;
+        width: 218px;
+        height: 40px;
         padding: 12px 24px;
+        margin: $margin-intro;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 19px;
         border-radius: 100px;
         color: white;
-        background-image: linear-gradient(0deg, rgba(147, 89, 220, 1) 0%, rgba(255, 121, 218, 0.9) 100%);
+        background-image: $gradiant;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    #fonctionnement {
+      display: flex;
+      flex-direction: column;
+      margin: 0 20px;
+
+      #fonctionnement-liste {
+        display: flex;
+        flex-direction: column;
+        counter-reset: item;
+
+        .fonctionnement-item {
+          border-radius: 100px;
+          background-color: $background;
+          width: 335px;
+          height: 72px;
+          text-align: center;
+          margin-bottom: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .fonctionnement-item:before {
+          content: counter(item) "";
+          counter-increment: item;
+        }
+      }
+    }
+
+    #restaurants {
+      background-color: $background;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .restaurants-item {
+        width: 370px;
+        height: 340px;
+        background-color: white;
+        margin-bottom: 20px;
+        border-radius: 15px 15px;
+        color: black;
+        font-size: 18px;
+        img {
+          width: 370px;
+          height: 231px;
+          border-radius: 15px 15px 0 0;
+        }
+        .restaurants-description {
+          display: flex;
+          justify-content: space-around;
+        }
+        .restaurants-icon {
+          display: flex;
+          align-items: center;
+        }
+        .restaurants-icon-full {
+          background: -webkit-linear-gradient(0deg, #9359dc 0%, rgba(255, 121, 218, 0.9) 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    #footer {
+      background-color: rgba(53, 53, 53, 1);
+      color: white;
+      display: flex;
+      flex-direction: column;
+
+      #footer-logo {
+        color: white;
+        font-family: "Shrikhand", "cursive";
+        font-size: 24px;
+        margin-left: 20px;
+      }
+      .footer-link {
+        color: white;
+        font-size: 18px;
+
       }
     }
 
