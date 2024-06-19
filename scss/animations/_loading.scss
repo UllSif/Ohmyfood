@@ -92,7 +92,6 @@
       width: auto;
       z-index: 6;
       opacity: 1;
-      animation: ustensils-moving 500ms $icons-delay;
 
       & img {
         height: 100%;
@@ -106,83 +105,9 @@
       width: auto;
       z-index: 5;
       opacity: 1;
-      animation: ustensils-moving 500ms $icons-delay*3;
 
       & img {
         height: 100%;
-      }
-    }
-
-    &-food12 {
-      width: 25%;
-      height: 25%;
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      &::before {
-        position: absolute;
-        top: 35%;
-        right: 31%;
-        display: inline-block;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        font-size: 40px;
-        color: $white;
-        transform: translateY(-150px);
-        animation: icons-appearing $icons-delay both;
-      }
-
-      &::after {
-        width: auto;
-        height: auto;
-        z-index: 1;
-        position: absolute;
-        top: 35%;
-        right: 30%;
-        display: inline-block;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        font-size: 40px;
-        color: $white;
-        transform: translateY(-150px);
-        animation: icons-appearing $icons-delay $icons-delay both;
-      }
-    }
-
-    &-food34 {
-      width: 25%;
-      height: 25%;
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      &::before {
-        position: absolute;
-        top: 35%;
-        right: 33%;
-        display: inline-block;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        font-size: 40px;
-        color: $white;
-        transform: translateY(-150px);
-        animation: icons-appearing $icons-delay $icons-delay*2 both;
-      }
-
-      &::after {
-        position: absolute;
-        top: 30%;
-        right: 37%;
-        display: inline-block;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        font-size: 40px;
-        color: $white;
-        transform: translateY(-150px);
-        animation: icons-appearing $icons-delay $icons-delay*3 both;
       }
     }
   }

@@ -23,17 +23,7 @@
   }
 }
 
-@keyframes ustensils-moving {
-  0% {
-    transform: translateY(-5px);
-    animation-timing-function: linear;
-  }
 
-  100% {
-    transform: translateY(5px);
-    animation-timing-function: linear;
-  }
-}
 
 .menu-plats:nth-child(1) .menu-cards {
   animation: appearEntrance 1.5s ease forwards;
