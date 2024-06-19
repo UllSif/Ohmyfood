@@ -1,0 +1,11 @@
+@mixin gradient($orientation: $degree) {
+  background:linear-gradient($degree, rgba(147, 89, 220, 1) 0%, rgba(255, 121, 218, 0.9) 100%);
+}
+
+@mixin object-shadow ($color: $shadow) {
+  box-shadow: 0 4px 10px 0 $color;
+}
+
+@mixin circle {
+  border-radius: 50%;
+}

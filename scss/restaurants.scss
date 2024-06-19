@@ -1,0 +1,164 @@
+@import "components/_variable.scss";
+@import "components/_button.scss";
+@import "components/_mixins.scss";
+@import "base/global";
+@import "base/_typography.scss";
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+@import "animations/_animations.scss";
+@import "animations/_heart.scss";
+
+.menu-arrow {
+  margin-left: -490px;
+}
+
+.menu-restaurant-img {
+  width: 100%;
+  height: 275px;
+  position: relative;
+  object-fit: cover;
+}
+
+.menu-titre {
+  font-family: "Shrikhand", "cursive";
+  font-size: 24px;
+  margin-right: 50px;
+}
+
+.menu {
+  background-color: $background;
+  border-radius: 35px 35px 0 0;
+  margin-top: -40px;
+  margin-left: 10%;
+  position: absolute;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .menu-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    i {
+      margin-right: 30px;
+    }
+  }
+
+  .menu-listes {
+    width: 60%;
+
+    .menu-plats {
+      margin-bottom: 40px;
+
+      .menu-item-titre {
+        font-weight: normal;
+        margin-left: 18px;
+      }
+
+      hr {
+        width: 40px;
+        margin-left: 18px;
+        background-color: $lightgreen;
+        height: 2px;
+      }
+
+      .menu-cards {
+        border-radius: 15px;
+        margin: 15px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        height: 69px;
+        @include object-shadow;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover > .menu-item-validate {
+          margin-right: 0px;
+        }
+
+        .menu-cards::after {
+          display: block;
+          position: absolute;
+          bottom: 2px;
+          width: 40px;
+          height: 4px;
+          background-color: #99e2d0;
+        }
+
+        .menu-item-header {
+          width: 90%;
+          font-size: 18px;
+          margin-left: 13px;
+
+          .menu-item-plat {
+            margin-bottom: -10px;
+          }
+
+          .menu-item-description {
+            font-size: 16px;
+          }
+        }
+
+        .menu-item-prix {
+          width: 10%;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          font-weight: bold;
+          font-size: 18px;
+          padding-top: 35px;
+        }
+      }
+
+      .menu-item-validate {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        height: 69px;
+        margin-right: -20%;
+        border-radius: 0px 15px 15px 0px;
+        background-color: $lightgreen;
+        transition: margin-right 800ms cubic-bezier(.63, 1.23, .96, .92);
+
+        &::after {
+          display: inline-block;
+          margin: auto;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          font-size: 25px;
+          content: "\f058";
+          color: white;
+          transition: transform 800ms cubic-bezier(.63, 1.23, .96, .92);
+        }
+      }
+    }
+  }
+}
+
+  @media (max-width: 767.98px) {
+    .menu-arrow {
+      margin-left: -90px;
+    }
+
+    .menu-titre {
+      margin-left: 20px;
+    }
+
+    .menu {
+      width: 100%;
+      margin-left: 0;
+
+      .menu-listes {
+        width: 100%;
+      }
+
+      .menu-item-prix {
+        margin-right: 15px;
+      }
+    }
+  }

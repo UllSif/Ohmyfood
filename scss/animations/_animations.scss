@@ -1,0 +1,89 @@
+@keyframes loading {
+  50% {
+    opacity: 0.95;
+  }
+
+  99% {
+    z-index: 21;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -20;
+  }
+}
+
+@keyframes rotate-gradient {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ustensils-moving {
+  0% {
+    transform: translateY(-5px);
+    animation-timing-function: linear;
+  }
+
+  100% {
+    transform: translateY(5px);
+    animation-timing-function: linear;
+  }
+}
+
+.menu-plats:nth-child(1) .menu-cards {
+  animation: appearEntrance 1.5s ease forwards;
+  opacity: 0;
+}
+
+/* CSS pour les éléments de plat */
+.menu-plats:nth-child(2) .menu-cards {
+  animation: appearPlat 2.5s ease forwards;
+  opacity: 0;
+}
+
+/* CSS pour les éléments de dessert */
+.menu-plats:nth-child(3) .menu-cards {
+  animation: appearDessert 3.5s ease forwards;
+  opacity: 0;
+}
+
+/* Animation pour les éléments d'entrée */
+@keyframes appearEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation pour les éléments de plat */
+@keyframes appearPlat {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation pour les éléments de dessert */
+@keyframes appearDessert {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

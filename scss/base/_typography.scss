@@ -1,0 +1,15 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+}
+
+@mixin cursive-logo {
+  font-size: 24px;
+  font-family: 'Shrikhand', 'cursive';
+  color: white;
+}
