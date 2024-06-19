@@ -15,3 +15,8 @@ $gradiant: linear-gradient(0deg, rgba(147, 89, 220, 1) 0%, rgba(255, 121, 218, 0
 $degree: 357deg;
 
 $icons-delay: 610ms;
+
+$breakpoints: (
+        table: 768px,
+        desktop: 1024px,
+);

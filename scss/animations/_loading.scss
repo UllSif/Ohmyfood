@@ -26,7 +26,7 @@
   @include circle;
   background: $gradiant;
   z-index: 0;
-  animation: rotate-gradient 3s infinite;
+  animation: rotate-gradient 2s infinite;
 
   &::after {
     z-index: 0;
@@ -129,7 +129,6 @@
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: 40px;
-        content: "\f578";
         color: $white;
         transform: translateY(-150px);
         animation: icons-appearing $icons-delay both;
@@ -146,7 +145,6 @@
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: 40px;
-        content: "\f7ec";
         color: $white;
         transform: translateY(-150px);
         animation: icons-appearing $icons-delay $icons-delay both;
@@ -169,7 +167,6 @@
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: 40px;
-        content: "\f7ef";
         color: $white;
         transform: translateY(-150px);
         animation: icons-appearing $icons-delay $icons-delay*2 both;
@@ -183,7 +180,6 @@
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: 40px;
-        content: "\f5d1";
         color: $white;
         transform: translateY(-150px);
         animation: icons-appearing $icons-delay $icons-delay*3 both;
