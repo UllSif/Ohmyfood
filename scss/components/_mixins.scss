@@ -9,3 +9,15 @@
 @mixin circle {
   border-radius: 50%;
 }
+
+@mixin mobile-responsive {
+  @media all and (min-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
+}
+
+@mixin table-responsive {
+  @media all and (min-width: map-get($breakpoints, table)) {
+    @content
+  }
+}

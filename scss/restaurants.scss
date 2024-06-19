@@ -9,7 +9,7 @@
 @import "animations/_heart.scss";
 
 .menu-arrow {
-  margin-left: -490px;
+  margin-left: -90px;
 }
 
 .menu-restaurant-img {
@@ -23,15 +23,16 @@
   font-family: "Shrikhand", "cursive";
   font-size: 24px;
   margin-right: 50px;
+  margin-left: 20px;
 }
 
 .menu {
   background-color: $background;
   border-radius: 35px 35px 0 0;
   margin-top: -40px;
-  margin-left: 10%;
-  position: absolute;
-  width: 90%;
+  margin-left: 0;
+  position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +49,7 @@
   }
 
   .menu-listes {
-    width: 60%;
+    width: 100%;
 
     .menu-plats {
       margin-bottom: 40px;
@@ -111,6 +112,7 @@
           font-weight: bold;
           font-size: 18px;
           padding-top: 35px;
+          margin-right: 15px;
         }
       }
 
@@ -140,25 +142,25 @@
   }
 }
 
-  @media (max-width: 767.98px) {
-    .menu-arrow {
-      margin-left: -90px;
+@include table-responsive {
+  .menu-arrow {
+    margin-left: -490px;
+  }
+
+  .menu-titre {
+    margin-left: 0;
+  }
+
+  .menu {
+    width: 80%;
+    margin-left: 10%;
+
+    .menu-listes {
+      width: 60%;
     }
 
-    .menu-titre {
-      margin-left: 20px;
-    }
-
-    .menu {
-      width: 100%;
-      margin-left: 0;
-
-      .menu-listes {
-        width: 100%;
-      }
-
-      .menu-item-prix {
-        margin-right: 15px;
-      }
+    .menu-item-prix {
+      margin-right: 0;
     }
   }
+}
