@@ -63,7 +63,8 @@
         width: 40px;
         margin-left: 18px;
         background-color: $lightgreen;
-        height: 2px;
+        height: 3px;
+        border: none;
       }
 
       .menu-cards {
@@ -112,7 +113,7 @@
           font-weight: bold;
           font-size: 18px;
           padding-top: 35px;
-          margin-right: 15px;
+          margin-right: 20px;
         }
       }
 
@@ -161,6 +162,11 @@
 
     .menu-item-prix {
       margin-right: 0;
+      width: 7% !important;
+    }
+
+    .menu-item-validate {
+      width: 11% !important;
     }
   }
 }

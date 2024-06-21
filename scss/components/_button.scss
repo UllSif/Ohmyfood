@@ -12,9 +12,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 10px #afafaf;
+  transition: opacity 350ms ease-in-out;
 
   &:hover {
-    opacity: 0.88;
-    box-shadow: 0 4px 10px #afafaf;
+    opacity: 0.75;
   }
 }
