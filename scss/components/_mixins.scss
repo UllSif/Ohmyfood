@@ -16,8 +16,8 @@
   }
 }
 
-@mixin table-responsive {
-  @media all and (min-width: map-get($breakpoints, table)) {
+@mixin desktop-responsive {
+  @media all and (min-width: map-get($breakpoints, desktop)) {
     @content
   }
 }
