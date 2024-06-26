@@ -25,19 +25,19 @@
 
 
 
-.menu-plats:nth-child(1) .menu-cards {
+.menu-listes-plats:nth-child(1) .menu-listes-plats-cards {
   animation: appearEntrance 1.5s ease forwards;
   opacity: 0;
 }
 
 /* CSS pour les éléments de plat */
-.menu-plats:nth-child(2) .menu-cards {
+.menu-listes-plats:nth-child(2) .menu-listes-plats-cards {
   animation: appearPlat 2.5s ease forwards;
   opacity: 0;
 }
 
 /* CSS pour les éléments de dessert */
-.menu-plats:nth-child(3) .menu-cards {
+.menu-listes-plats:nth-child(3) .menu-listes-plats-cards {
   animation: appearDessert 3.5s ease forwards;
   opacity: 0;
 }
